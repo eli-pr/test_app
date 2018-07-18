@@ -26,12 +26,21 @@ $ npm start
 
 ### Prerequisites
 
+Note that Stacker only works with Python 2.
+
 If you don't have [homebrew](https://brew.sh/), get it. If you are using windows, [install python](https://www.python.org/downloads/) yourself.
 
-```
-$ brew install python
-$ pip install -U virtualenv
-```
+If you don't have python:
+
+`$ brew install python`
+
+If you do, it can't hurt to:
+
+`$ brew upgrade python`
+
+Then:
+
+`$ pip install -U virtualenv`
 
 ## Notes:
 
