@@ -1,0 +1,18 @@
+#this is the config for s3
+# to run this type in stacker build environments/degaas.env config.yaml
+
+
+sys_path: ./
+
+namespace: ${environment}
+
+stacks:
+  - name: s3bucket
+    class_path: blueprints.s3.Buckets
+    variables:
+      SingleBucket:
+        MySingleBucket:
+          BucketName: ${s3_bucket_name}
+      SingleOptionalSubscription:
+       Endpoint: arn:aws:sns:us-west-2:111122223333:MyTopic
+       Protocol: monte.decastongrene@productops.com
