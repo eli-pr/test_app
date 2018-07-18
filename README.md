@@ -30,7 +30,7 @@ If you don't have [homebrew](https://brew.sh/), get it. If you are using windows
 
 ```
 $ brew install python
-$ pip install virtualenv
+$ pip install -U virtualenv
 ```
 
 ## Notes:

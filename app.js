@@ -28,11 +28,11 @@ app.put('/', async (req, res) => {
     body.data.status = 'creating'
     res.json(body);
 
-    if (body.data.s3_bucket_name === undefined) {
+    if (body.s3_bucket_name === undefined) {
       throw Error('incoming JSON must have field \'s3_bucket_name\'');
     }
 
-    const stacker = spawn('./bin/create_stack.sh', ['eli-stack', body.data.s3_bucket_name]);
+    const stacker = spawn('./bin/create_stack.sh', ['eli-stack', body.s3_bucket_name]);
     stacker.stdout.on('data', (data) => {
       console.log(`${data}`);
     });
