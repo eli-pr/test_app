@@ -14,14 +14,14 @@ deploys this API to ECS Fargate.
 [Prereqs](#prerequisites): Python (2.7), Virtualenv, npm, node
 
 ```
-virtualenv <venv>
-. <venv>/bin/activate
-pip install stacker
+$ virtualenv <venv>
+$ . <venv>/bin/activate
+$ pip install stacker
 
-git clone https://github.com/eli-pr/test_app.git
-cd test_app
-npm i
-npm start
+$ git clone https://github.com/eli-pr/test_app.git
+$ cd test_app
+$ npm i
+$ npm start
 ```
 
 ### Prerequisites
@@ -29,8 +29,8 @@ npm start
 If you don't have [homebrew](https://brew.sh/), get it. If you are using windows, [install python](https://www.python.org/downloads/) yourself.
 
 ```
-brew install python
-pip install virtualenv
+$ brew install python
+$ pip install virtualenv
 ```
 
 ## Notes:
